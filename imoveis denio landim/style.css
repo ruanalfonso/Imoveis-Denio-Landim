@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    padding: 8px 24px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+    row-gap: 8px;
+    column-gap: 24px;
+
+;
+}
+
+header img{
+    width: 180px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li{
+    margin-left: 24px;
+}
+
+header a{
+    color: orange;
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: 0.2s;
+    
+}
+
+header a:hover{
+    color: gray;
+}
+
+.banner{
+
+    height: 320px;
+    padding: 24px;
+
+    background-image: url(imagem/vecteezy_downtown-brisbane-city-skyline-and-brisbane-river-in-australia_1309594.jpg);
+    background-size: cover;
+    background-position: 25%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.banner h1{
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.dots{
+    display: flex;
+}
+.dots span{
+ display: block;   
+ background-color: #ebebeb;
+
+ width: 12px;
+ height: 12px;
+ border-radius: 50%;
+}
+
+.dots span + span{
+    margin-left: 8px; 
+}
+
+.dots .active{
+    background-color: orange;
+}
+
+.gallery{
+    max-width: 1200px;
+    margin: 64px auto 0;
+    padding: 0 24px;
+}
+
+.gallery h2{
+    margin-bottom: 32px;
+    padding-left: 8px;
+    border-left: 4px solid orange;
+    
+}
+
+.gallery-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-row div{
+    width: 350px;
+    flex: 1 1 250px;
+}
+
+.gallery-row img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.gallery p{
+    font-weight: bolder;
+    
+    
+}
+
+.gallery a{
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.gallery a:hover{
+    color: orange;
+}
+
+
+.history{
+    margin: 64px 0 0;
+    padding: 92px 24px 0;
+    background-color: black;
+    color: #ebebeb;
+    border-top: 6px solid orange;
+    border-bottom: 3px solid orange;
+}
+
+.history .container {
+    max-width: 1200px;
+    margin: 0 auto ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    
+
+
+}
+
+.history .container .col {
+    flex: 1 1 350px;
+}
+
+.history .container .col img{
+    width: 40%;
+    display: block;
+}
+
+.history h2{
+    margin-bottom: 40px;
+    padding-left: 8px;
+    border-left: 4px solid orange;
+}
+
+.history p{
+    line-height: 1.5;
+}
+
+.history p + p {
+    margin-top: 24px;
+    margin-bottom: 30px;
+   
+}
+
+
+.history a{
+    color: orange;
+    transition: color 0.2s;
+}
+
+.history a:hover{
+    color: gray;
+}
+
+footer{
+    
+    padding: 64px 24px;
+    line-height: 2;
+    background-color: black;
+    color: #ebebeb;
+    display: flex;
+    justify-content:  center;
+    flex-wrap: wrap;  
+    
+
+}
+
+footer img{
+    width: 25px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+}
+
+footer ul li + li{
+    margin-left: 24px;
+}
+
+footer a {
+    color: orange;
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+footer a:hover{
+    color: gray
+}
+
+footer  p{
+    padding-top: 25px;
+    
+}
